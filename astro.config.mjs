@@ -24,7 +24,9 @@ export default defineConfig({
 				{
 					label: 'Hacktoberfest 2023',
 					items: [
-						{ label: 'คำแนะนำในการเข้าร่วม', link: '/hacktoberfest-2023' },
+						{ label: 'แนะนำเบื้องต้น', link: '/hacktoberfest-2023' },
+						{ label: 'เริ่มเขียนและส่งคอนเทนต์', link: '/hacktoberfest-2023/getting-start' },
+						{ label: 'Mongoberfest 2023', link: '/hacktoberfest-2023/event' },
 					],
 				},
 			],
@@ -33,4 +35,3 @@ export default defineConfig({
 		tailwind({ applyBaseStyles: false }),
 	],
 });
-
