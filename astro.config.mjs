@@ -11,6 +11,7 @@ export default defineConfig({
 			title: 'MongoDB Thailand',
 			social: {
 				facebook: 'https://www.facebook.com/groups/mongodbthailand/',
+				youtube: 'https://www.youtube.com/channel/UCTBf047qtAST4RXhYM61vVg',
 				github: 'https://github.com/mongodbthailand',
 			},
 			sidebar: [

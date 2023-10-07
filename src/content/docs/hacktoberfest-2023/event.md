@@ -11,8 +11,8 @@ description: ร่วมอีเวนต์ Mongoberfest 2023 ในวัน
 
 ## ร่วมสนับสนุนโดย
 
-* [MongoDB Thailand User Group](https://www.facebook.com/groups/mongodbthailand/)
-* [PyCon Thailand](https://th.pycon.org/)
-* Bangkok Opensource Festival 2023
-* [INOX](https://www.inox.co.th)
-* [WiseSight](https://wisesight.com)
+- [MongoDB Thailand User Group](https://www.facebook.com/groups/mongodbthailand/)
+- [PyCon Thailand](https://th.pycon.org/)
+- Bangkok Opensource Festival 2023
+- [INOX](https://www.inox.co.th)
+- [WiseSight](https://wisesight.com)
