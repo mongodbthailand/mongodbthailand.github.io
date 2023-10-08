@@ -14,7 +14,7 @@
 - Clone on your local machine
 
 ```terminal
-git clone https://github.com/mongodbthailand/mongodbthailand.github.io.git
+git clone https://github.com/your_repo/mongodbthailand.github.io.git
 ```
 - Navigate to the project directory.
 ```terminal
