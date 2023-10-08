@@ -14,11 +14,11 @@
 - Clone on your local machine
 
 ```terminal
-git clone https://github.com/mongodbthailand/mongodbthailand.github.io.git
+git clone https://github.com/your_repo/mongodbthailand.github.io.git
 ```
-- Navigate to project directory.
+- Navigate to the project directory.
 ```terminal
-cd Hacktoberfest2023
+cd mongodbthailand.github.io
 ```
 
 - Create a new Branch
