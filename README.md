@@ -1,6 +1,6 @@
 # mongodbthailand.com Website
 
-โปรเจกต์นี้สำหรับเก็บซอร์สโค้ดของเว็บไซต์ mongodbthailand.com เว็บไซต์รวบรวมข้อมูลและคำแนะนำการใช้งาน MongoDB
+โปรเจกต์นี้สำหรับเก็บซอร์สโค้ดของเว็บไซต์ [MongoDB Thailand](https://mongodbthailand.com) เว็บไซต์รวบรวมข้อมูลและคำแนะนำการใช้งาน MongoDB
 สำหรับคอมมูนิตี้ชาวไทย
 
 ## Hacktoberfest 2023
