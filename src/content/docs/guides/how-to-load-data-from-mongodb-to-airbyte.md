@@ -1,15 +1,13 @@
 ---
-title: How to load data from MongoDB to MongoDB
-description: เรียนรู้วิธีใช้ Airbyte เพื่อซิงค์รองข้อมูล MongoDB ของคุณไปยัง MongoDB ในเวลาไม่กี่นาที
+title: How to load data from MongoDB to Airbyte
+description: เรียนรู้วิธีใช้ Airbyte เพื่อซิงค์ข้อมูล MongoDB ของคุณไปยัง MongoDB ในเวลาไม่กี่นาที
 ---
 
 ## Airbyte คืออะไร?
 
 Airbyte คือแพลตฟอร์มซอฟต์แวร์โอเพนซอร์ส (open-source software)เป็นเครื่องมือที่ช่วยในการข้อมูลระหว่างระบบต่างๆได้เพียงไม่กี่คลิก ไม่ต้องเขียนโค้ดเอง
 
-<br>
 เราจะอธิบายขั้นตอนที่เราซิงข้อมูลจาก MongoDB ไปยัง MongoDB ปลายทางโดยใช้ Airbyte ซึ่งเป็นเครื่องมือที่ช่วยในกระบวนการนี้
-<br>
 
 ## Prerequisites
 
@@ -49,6 +47,4 @@ Airbyte คือแพลตฟอร์มซอฟต์แวร์โอเ
 7. Test your connection: คลิกที่ปุ่ม 'Test Connection' เพื่อตรวจสอบว่าการตั้งค่าของคุณทำงานได้หรือไม่ หากการทดสอบการเชื่อมต่อเป็นที่สำเร็จ บันทึกการกำหนดค่าของคุณ
 8. Start the sync: หากการทดสอบเชื่อมต่อผ่าน คลิกที่ 'Set Up Connection' Airbyte จะเริ่มย้ายข้อมูลจาก MongoDB (1) ไปยัง MongoDB (2) ตามการตั้งค่าของคุณ
 
-<br>
-<br>
-อ้างอิง : [เอกสารจาก Airbyte](https://airbyte.com/how-to-sync/mongodb-to-mongodb-destination)
+อ้างอิง: [เอกสารจาก Airbyte](https://airbyte.com/how-to-sync/mongodb-to-mongodb-destination)
