@@ -3,8 +3,6 @@ title: MongoDB Time Series Collection
 description: จัดการ Time series data ด้วย MongoDB Time series collection
 ---
 
-# MongoDB Time Series Collection
-
 บทความนี้จะเป็นการแนะนำการใช้งาน Time series collection ใน MongoDB ครับ โดยก่อนที่เราจะไปใช้งาน Time series collection ของ MongoDB เราควรจะเริ่มจากรู้จัก Time series data กันก่อน
 
 ## Time Series Data คืออะไร
