@@ -45,8 +45,6 @@ db.collection.updateOne(
 
 เพื่อความเข้าใจเรามาดูการใช้งานกันดีกว่าครับ
 
-### เพิ่มข้อมูลโดยที่ไม่ได้ระบุ _id
-
 ```
 db.collection.updateOne({
   "position": "Developer"
