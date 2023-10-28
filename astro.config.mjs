@@ -25,6 +25,10 @@ export default defineConfig({
           autogenerate: { directory: 'guides' },
         },
         {
+          label: 'คำสั่งต่างๆ',
+          autogenerate: { directory: 'methods' },
+        },
+        {
           label: 'Hacktoberfest 2023',
           items: [
             { label: 'แนะนำเบื้องต้น', link: '/hacktoberfest-2023' },
