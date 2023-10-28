@@ -14,7 +14,7 @@ description: การใช้งาน db.collection.updateOne()
 - `insertedId` มีค่าเป็น `ObjectId` ระบุ `_id` หากไม่มีข้อมูล แล้วใส่ `upsert: true`
 - `matchedCount` มีค่าเป็น `number` ระบุว่าค้นหาข้อมูลที่เจอทั้งหมดเท่าไหร่
 - `modifiedCount` มีค่าเป็น `number` ระบุว่าแก้ไขข้อมูลที่เจอไปทั้งหมดเท่าไหร่
-- `upsertedCount` มีค่าเป็น `number` ระบุว่าเพิ่มข้อมูลใหม่เข้่าไปทั้งหมดเท่าไหร่
+- `upsertedCount` มีค่าเป็น `number` ระบุว่าเพิ่มข้อมูลใหม่เข้าไปทั้งหมดเท่าไหร่
 ## Syntax
 ```
 db.collection.updateOne(
