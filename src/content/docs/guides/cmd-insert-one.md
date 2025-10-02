@@ -1,6 +1,6 @@
 ---
-title: db.collection.insertOne()
 description: การใช้งาน db.collection.insertOne()
+title: db.collection.insertOne()
 ---
 
 คำสั่ง `db.collection.insertOne()` เป็นคำสั่งสำหรับ เพิ่มข้อมูลเข้าไปใน collection เพียง 1 record
@@ -8,11 +8,13 @@ description: การใช้งาน db.collection.insertOne()
 ## ข้อมูลที่ Return
 
 เมื่อใช้คำสั่งนี้จะข้อมูลที่ Return มาจะมี
+
 - `acknowledged` มีค่าเป็น Boolean
 - `insertedId` ซึ่งจะมีค่า `_id` ของข้อมูลที่เราเพิ่มเข้าไป
 
 ## Syntax
-```
+
+```javascript
 db.collection.insertOne(
     <document>,
     {
@@ -34,7 +36,7 @@ db.collection.insertOne(
 
 ### เพิ่มข้อมูลโดยที่ไม่ได้ระบุ _id
 
-```
+```javascript
 db.users.insertOne({
     "name": "Person name 1",
     "position": "Developer",
@@ -49,7 +51,7 @@ db.users.insertOne({
 
 จะได้ response กลับมา
 
-```
+```javascript
 {
    "acknowledged" : true,
    "insertedId" : ObjectId("6531dc55156e498421faa729")
@@ -60,7 +62,7 @@ db.users.insertOne({
 
 ### เพิ่มข้อมูลโดยระบุ _id
 
-```
+```javascript
 db.users.insertOne({
     "_id": ObjectId("56fc40f9d735c28df206d078"),
     "name": "Person name 2",
@@ -76,13 +78,13 @@ db.users.insertOne({
 
 จะได้ response กลับมา
 
-```
+```javascript
 { "acknowledged" : true, "insertedId" : ObjectId("56fc40f9d735c28df206d078") }
 ```
 
 ถ้าหากลองเพิ่มข้อมูลอีกครั้งโดยที่ใส่ `_id` ซ้ำกับที่มีอยู่ เช่น
 
-```
+```javascript
 db.users.insertOne({
     "_id": ObjectId("56fc40f9d735c28df206d078"),
     "name": "Person name 3",
@@ -98,6 +100,6 @@ db.users.insertOne({
 
 จะแสดง error กลับมาดังนี้ครับ
 
-```
+```html
 MongoServerError: E11000 duplicate key error collection: example.users index: _id_ dup key: { _id: ObjectId('56fc40f9d735c28df206d078') }
 ```
