@@ -25,11 +25,11 @@ export default defineConfig({
           autogenerate: { directory: 'guides' },
         },
         {
-          label: 'Hacktoberfest 2023',
+          label: 'Hacktoberfest 2025',
           items: [
-            { label: 'แนะนำเบื้องต้น', link: '/hacktoberfest-2023' },
-            { label: 'เริ่มเขียนและส่งคอนเทนต์', link: '/hacktoberfest-2023/getting-start' },
-            { label: 'Mongoberfest 2023', link: '/hacktoberfest-2023/event' },
+            { label: 'แนะนำเบื้องต้น', link: '/hacktoberfest-2025' },
+            { label: 'เริ่มเขียนและส่งคอนเทนต์', link: '/hacktoberfest-2025/getting-start' },
+            { label: 'Mongoberfest 2025', link: '/hacktoberfest-2025/event' },
           ],
         },
       ],
