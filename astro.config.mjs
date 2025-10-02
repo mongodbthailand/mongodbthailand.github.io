@@ -14,22 +14,34 @@ export default defineConfig({
       editLink: {
         baseUrl: 'https://github.com/mongodbthailand/mongodbthailand.github.io/edit/main/',
       },
-      social: {
-        facebook: 'https://www.facebook.com/groups/mongodbthailand/',
-        youtube: 'https://www.youtube.com/channel/UCTBf047qtAST4RXhYM61vVg',
-        github: 'https://github.com/mongodbthailand',
-      },
+      social: [
+        {
+          icon: 'facebook',
+          label: 'facebook',
+          href: 'https://www.facebook.com/groups/mongodbthailand/',
+        },
+        {
+          icon: 'youtube',    
+          label: 'youtube',
+          href: 'https://www.youtube.com/channel/UCTBf047qtAST4RXhYM61vVg',
+        },
+        {
+          icon: 'github',
+          label: 'github',
+          href: 'https://github.com/mongodbthailand',
+        },
+      ],
       sidebar: [
         {
           label: 'Guides',
           autogenerate: { directory: 'guides' },
         },
         {
-          label: 'Hacktoberfest 2023',
+          label: 'Hacktoberfest',
           items: [
-            { label: 'แนะนำเบื้องต้น', link: '/hacktoberfest-2023' },
-            { label: 'เริ่มเขียนและส่งคอนเทนต์', link: '/hacktoberfest-2023/getting-start' },
-            { label: 'Mongoberfest 2023', link: '/hacktoberfest-2023/event' },
+            { label: 'แนะนำเบื้องต้น', link: '/hacktoberfest' },
+            { label: 'เริ่มเขียนและส่งคอนเทนต์', link: '/hacktoberfest/getting-start' },
+            { label: 'Mongoberfest', link: '/hacktoberfest/event' },
           ],
         },
       ],

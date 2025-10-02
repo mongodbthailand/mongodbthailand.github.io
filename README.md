@@ -3,10 +3,10 @@
 โปรเจกต์นี้สำหรับเก็บซอร์สโค้ดของเว็บไซต์ [MongoDB Thailand](https://mongodbthailand.com) เว็บไซต์รวบรวมข้อมูลและคำแนะนำการใช้งาน MongoDB
 สำหรับคอมมูนิตี้ชาวไทย
 
-## Hacktoberfest 2023
+## Hacktoberfest
 
 ปัจจุบันโครงการนี้เปิดรับ MR เพื่อเพิ่มคอนเทนต์ที่น่าสนใจ สามารถติดตามรายละเอียดเพิ่มเติมได้ที่
-[หน้ารายละเอียดกิจกรรม Hacktoberfest 2023](https://mongodbthailand.com/hacktoberfest-2023)
+[หน้ารายละเอียดกิจกรรม Hacktoberfest](https://mongodbthailand.com/hacktoberfest)
 
 ## สำหรับนักพัฒนาและผู้ร่วมแก้ไข
 
@@ -16,7 +16,7 @@
 
 Inside of your Astro + Starlight project, you'll see the following folders and files:
 
-```
+```ini
 .
 ├── public/
 ├── src/
