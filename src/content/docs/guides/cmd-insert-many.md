@@ -1,6 +1,6 @@
 ---
-title: db.collection.insertMany()
 description: การใช้งาน db.collection.insertMany()
+title: db.collection.insertMany()
 ---
 
 คำสั่ง `db.collection.insertMany()` เป็นคำสั่งสำหรับ เพิ่มข้อมูลหลาย ๆ ข้อมูล เข้าไปใน collection
@@ -8,11 +8,13 @@ description: การใช้งาน db.collection.insertMany()
 ## ข้อมูลที่ Return
 
 เมื่อใช้คำสั่งนี้จะข้อมูลที่ Return มาจะมี
+
 - `acknowledged` มีค่าเป็น Boolean
 - `insertedIds` ซึ่งจะมีค่าเป็น array ที่มีค่าเป็นรายการ `_id` ของข้อมูลที่เราเพิ่มเข้าไป
 
 ## Syntax
-```
+
+```javascript
 db.collection.insertMany(
    [ <document 1> , <document 2>, ... ],
    {
@@ -30,23 +32,23 @@ db.collection.insertMany(
 
 > collection จะถูกสร้างมาให้โดยอัตโนมัติ ถ้าหากเราใช้คำสั่งนี้โดยที่ยังไม่ได้สร้าง collection
 
-โดยทั่วไปการเพิ่มข้อมูลจะถูกแทรกตามลำดับที่กำหนดไว้ สิ่งที่ควรรู้เพิ่มเติมคือ 
+โดยทั่วไปการเพิ่มข้อมูลจะถูกแทรกตามลำดับที่กำหนดไว้ สิ่งที่ควรรู้เพิ่มเติมคือ
 
 ถ้าหากเรากำหนด ordered เป็น `true` แล้วเกิดข้อผิดพลาดขณะที่เพิ่มข้อมูล **ข้อมูลที่อยู่หลังจากข้อมูลที่ผิดพลาดจะไม่ถูกเพิ่มเข้าไป**
 
 แต่ถ้าหากเรากำหนด ordered เป็น `false` แล้วเกิดข้อผิดพลาดขณะที่เพิ่มข้อมูล **ข้อมูลที่ไม่ได้เกิดปัญหาจะถูกเพิ่มเข้าไปปกติ แต่ข้อมูลที่เกิดปัญหาจะไม่ถูกเพิ่มเข้าไป**
 
-> **Note เพิ่มเติม** 
-> 
+> **Note เพิ่มเติม**
+>
 > จำนวนของข้อมูลจะต้องไม่เกินค่า `maxWriteBatchSize` ซึ่งเราสามารถดูค่านี้โดยการใช้คำสั่ง `db.hello()` ซึ่งจะมีคีย์ `maxWriteBatchSize` แสดงอยู่ โดยปกติแล้วค่าจะอยู่ที่ 100,000 (จำนวน array ของข้อมูลต่อการเขียน 1 ครั้ง)
 
 เพื่อความเข้าใจมากยิ่งขึ้น เรามาดูตัวอย่างกันครับ
 
 ## Example
 
-### เพิ่มข้อมูลโดยที่ไม่ได้ระบุ _id
+### เพิ่มข้อมูลโดยที่ไม่ได้ระบุ `_id`
 
-```
+```javascript
 db.users.insertMany([
   {
     "name": "Person name 1",
@@ -95,7 +97,7 @@ db.users.insertMany([
 
 จะได้ response กลับมา
 
-```
+```javascript
 {
   acknowledged: true,
   insertedIds: {
@@ -110,7 +112,7 @@ db.users.insertMany([
 
 ### เพิ่มข้อมูลโดยระบุ _id
 
-```
+```javascript
 db.users.insertMany([
   {
     "_id": 1,
@@ -162,7 +164,7 @@ db.users.insertMany([
 
 จะได้ response กลับมา
 
-```
+```javascript
 {
     acknowledged: true,
     insertedIds: {
@@ -175,9 +177,9 @@ db.users.insertMany([
 
 ### เพิ่มข้อมูลโดยระบุ _id ซ้ำ โดยกำหนดค่า ordered เป็น true
 
-ในที่นี้จะกำหนดค่า `_id` **เป็น 11 ซ้ำกัน 2 อันเน้อครับ** และเราจะไม่ตั้งค่า ordered เพราะ **ค่าเริ่มต้นของ** `ordered` **มีค่าเป็น true อยู่แล้ว**
+ในที่นี้จะกำหนดค่า `_id` __เป็น 11 ซ้ำกัน 2 อันเน้อครับ__ และเราจะไม่ตั้งค่า ordered เพราะ __ค่าเริ่มต้นของ__ `ordered` __มีค่าเป็น true อยู่แล้ว__
 
-```
+```javascript
 db.users.insertMany([
   {
     "_id": 11,
@@ -229,7 +231,7 @@ db.users.insertMany([
 
 เมื่อลองใช้คำสั่งข้างต้น จะพบว่าเกิด Error แบบนี้ครับ
 
-```
+```javascript
 MongoBulkWriteError: E11000 duplicate key error collection: example.users index: _id_ dup key: { _id: 11 }
 Result: BulkWriteResult {
   insertedCount: 1,
@@ -262,11 +264,11 @@ Write Errors: [
 
 และจะพบว่าข้อมูลที่ถูกเพิ่มเข้าไปจะมีแค่ `_id: 11` อันเดียว ซึ่งคือข้อมูลแรกที่เพิ่มเข้าไป และยังไม่ได้เกิดปัญหาอะไร แต่เนื่องจากข้อมูลถัดมาคือเกิดข้อผิดพลาด คือ `_id: 11` ตัวถัดมาไม่สามารถเพิ่มได้ ทำให้ `_id: 12` จะไม่ถูกเพิ่มต่อแล้ว
 
-### เพิ่มข้อมูลโดยระบุ _id ซ้ำ โดยกำหนดค่า ordered เป็น false
+### เพิ่มข้อมูลโดยระบุ `_id` ซ้ำ โดยกำหนดค่า ordered เป็น false
 
-ในที่นี้เราจะลองกำหนดค่าให้คล่้าย ๆ กับก่อนหน้านี้ โดยจะมี `_id: 21` ซ้ำกัน โดยกำหนดค่า `ordered` เป็น **false**
+ในที่นี้เราจะลองกำหนดค่าให้คล่้าย ๆ กับก่อนหน้านี้ โดยจะมี `_id: 21` ซ้ำกัน โดยกำหนดค่า `ordered` เป็น __false__
 
-```
+```javascript
 db.users.insertMany([
   {
     "_id": 21,
@@ -318,7 +320,7 @@ db.users.insertMany([
 
 เมื่อลองใช้คำสั่งข้างต้นจะพบว่าแสดง error กลับมาดังนี้ครับ
 
-```
+```javascript
 MongoBulkWriteError: E11000 duplicate key error collection: example.users index: _id_ dup key: { _id: 21 }
 Result: BulkWriteResult {
   insertedCount: 2,
