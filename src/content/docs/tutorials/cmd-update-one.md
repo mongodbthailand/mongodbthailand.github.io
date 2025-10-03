@@ -47,7 +47,7 @@ db.collection.updateOne(
 
 เพื่อความเข้าใจเรามาดูการใช้งานกันดีกว่าครับ
 
-```json
+```js
 db.collection.updateOne({
   "position": "Developer"
 },
@@ -60,7 +60,7 @@ db.collection.updateOne({
 
 จะได้ response กลับมา
 
-```css
+```js
 {
   acknowledged: true,
   insertedId: null,
