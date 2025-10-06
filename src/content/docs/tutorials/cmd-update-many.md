@@ -1,26 +1,29 @@
 ---
-description: การใช้งาน db.collection.updateOne()
-title: db.collection.updateOne()
+description: การใช้งาน db.collection.updateMany()
+title: db.collection.updateMany()
 ---
 
-คำสั่ง `db.collection.updateOne()` เป็นคำสั่งสำหรับ แก้ไขข้อมูลเข้าไปใน `collection` เพียง 1 `document`
-อ้างอิงจาก [ลิงค์นี้](https://www.mongodb.com/docs/manual/reference/method/db.collection.updateone/)
+คำสั่ง `db.collection.updateMany()` เป็นคำสั่งสำหรับ แก้ไขข้อมูลเข้าไปใน `collection` เพียง 1 `document`
+อ้างอิงจาก [ลิงค์นี้](https://www.mongodb.com/docs/manual/reference/method/db.collection.updatemany/)
 
 ## ข้อมูลที่ Return
 
 เมื่อใช้คำสั่งนี้จะข้อมูลที่ Return มาจะมี
-`{ "acknowledged" : boolean, "insertedId" ObjectId, "matchedCount" : number, "modifiedCount" : number, "upsertedCount": number }`
+
+```js
+{ "acknowledged" : boolean, "upsertedId" ObjectId, "matchedCount" : number, "modifiedCount" : number, "upsertedCount": number }
+```
 
 - `acknowledged` มีค่าเป็น Boolean
-- `insertedId` มีค่าเป็น `ObjectId` ระบุ `_id` หากไม่มีข้อมูล แล้วใส่ `upsert: true`
 - `matchedCount` มีค่าเป็น `number` ระบุว่าค้นหาข้อมูลที่เจอทั้งหมดเท่าไหร่
 - `modifiedCount` มีค่าเป็น `number` ระบุว่าแก้ไขข้อมูลที่เจอไปทั้งหมดเท่าไหร่
+- `upsertedId` มีค่าเป็น `ObjectId` ระบุ `_id` หากไม่มีข้อมูล แล้วใส่ `upsert: true`
 - `upsertedCount` มีค่าเป็น `number` ระบุว่าเพิ่มข้อมูลใหม่เข้าไปทั้งหมดเท่าไหร่
 
 ## Syntax
 
 ```js
-db.collection.updateOne(
+db.collection.updateMany(
    <filter>,
    <update>,
    {
@@ -28,7 +31,8 @@ db.collection.updateOne(
      writeConcern: <document>,
      collation: <document>,
      arrayFilters: [ <filterdocument1>, ... ],
-     hint:  <document|string>        // Available starting in MongoDB 4.2.1
+     hint:  <document|string>,
+     let: <document>
    }
 )
 ```
@@ -96,11 +100,11 @@ db.collection.updateOne(
 ]
 ```
 
-ให้แก้ไขข้อมูล `age`(อายุ) เพียง 1 `document` ที่มี `position` เป็น `Senior Developer`
+ให้แก้ไขข้อมูล `age`(อายุ) กับทุก `document` ที่มี `position` เป็น `Developer`
 
 ```js
-db.collection.updateOne({
-  "position": "Senior Developer"
+db.collection.updateMany({
+  "position": "Developer"
 },
 {
   $set: {
@@ -114,9 +118,9 @@ db.collection.updateOne({
 ```js
 {
   acknowledged: true,
-  insertedId: null,
-  matchedCount: 1,
-  modifiedCount: 1,
+  upsertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
   upsertedCount: 0
 }
 ```
