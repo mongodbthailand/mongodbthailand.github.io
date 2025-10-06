@@ -3,7 +3,8 @@ description: การใช้งาน db.collection.insertMany()
 title: db.collection.insertMany()
 ---
 
-คำสั่ง `db.collection.insertMany()` เป็นคำสั่งสำหรับ เพิ่มข้อมูลหลาย ๆ ข้อมูล เข้าไปใน collection
+คำสั่ง `db.collection.insertMany()` เป็นคำสั่งสำหรับ เพิ่มข้อมูลหลาย ๆ ข้อมูล เข้าไปใน `collection`
+อ้างอิงจาก [ลิงค์นี้](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertmany/)
 
 ## ข้อมูลที่ Return
 

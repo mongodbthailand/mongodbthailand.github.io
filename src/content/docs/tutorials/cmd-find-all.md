@@ -2,8 +2,18 @@
 description: การใช้งาน db.collection.find()
 title: db.collection.find()
 ---
+คำสั่ง `db.collection.find()` เป็นคำสั่งสำหรับ เรียกดูข้อมูลใน `collection` นั้นๆ
+อ้างอิงจาก [ลิงค์นี้](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/)
 
-## คำถาม
+## ตัวอย่างแรก
+
+หากต้องการเรียกดูข้อมูลทั้งหมดจะใช้คำสั่งดังนี้
+
+```js
+db.collection.find({})
+```
+
+## ตัวอย่างที่สอง
 
 จากชุดข้อมูลด้านล่างนี้ ถ้าต้องการค้นหาข้อมูลทั้งหมดที่ `education` เป็น `Bachelor` เราจะเขียนคำสั่ง MongoDB Query API ได้อย่างไร
 
@@ -64,4 +74,3 @@ db.collection.find({
   ]
 })
 ```
-

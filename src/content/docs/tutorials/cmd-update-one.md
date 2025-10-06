@@ -3,8 +3,8 @@ description: การใช้งาน db.collection.updateOne()
 title: db.collection.updateOne()
 ---
 
-คำสั่ง `db.collection.updateOne()` เป็นคำสั่งสำหรับ แก้ไขข้อมูลเข้าไปใน collection เพียง 1 document
-อ้างอิงจาก [ลิงค์นี้](https://www.mongodb.com/docs/manual/reference/method/db.collection.updateOne/)
+คำสั่ง `db.collection.updateOne()` เป็นคำสั่งสำหรับ แก้ไขข้อมูลเข้าไปใน `collection` เพียง 1 `document`
+อ้างอิงจาก [ลิงค์นี้](https://www.mongodb.com/docs/manual/reference/method/db.collection.updateone/)
 
 ## ข้อมูลที่ Return
 

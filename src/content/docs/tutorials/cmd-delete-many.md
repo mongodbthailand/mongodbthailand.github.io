@@ -3,7 +3,8 @@ description: การใช้งาน db.collection.deleteMany()
 title: db.collection.deleteMany()
 ---
 
-คำสั่ง `db.collection.deleteMany()` เป็นคำสั่งสำหรับ ลบข้อมูลทั้งหมด ที่เงื่อนไขที่กำหนด อ้างอิงจาก [ลิงค์นี้](https://www.mongodb.com/docs/manual/reference/method/db.collection.deletemany/)
+คำสั่ง `db.collection.deleteMany()` เป็นคำสั่งสำหรับ ลบข้อมูลทั้งหมด ที่เงื่อนไขที่กำหนด 
+อ้างอิงจาก [ลิงค์นี้](https://www.mongodb.com/docs/manual/reference/method/db.collection.deletemany/)
 
 ## ข้อมูลที่ Return
 

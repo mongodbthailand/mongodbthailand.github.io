@@ -3,7 +3,8 @@ description: การใช้งาน db.collection.insertOne()
 title: db.collection.insertOne()
 ---
 
-คำสั่ง `db.collection.insertOne()` เป็นคำสั่งสำหรับ เพิ่มข้อมูลเข้าไปใน collection เพียง 1 record
+คำสั่ง `db.collection.insertOne()` เป็นคำสั่งสำหรับ เพิ่มข้อมูลเข้าไปใน `collection` เพียง 1 `document`
+อ้างอิงจาก [ลิงค์นี้](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertone/)
 
 ## ข้อมูลที่ Return
 
