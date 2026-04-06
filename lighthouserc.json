@@ -19,7 +19,9 @@
         "dom-size-insight": "off",
         "image-delivery-insight": "off",
         "render-blocking-insight": "off",
-        "render-blocking-resources": "off"
+        "render-blocking-resources": "off",
+        "forced-reflow-insight": "off",
+        "max-potential-fid": "off"
       }
     }
   }
