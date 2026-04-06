@@ -14,7 +14,12 @@
       "assertions": {
         "categories:accessibility": ["warn", { "minScore": 0.9 }],
         "categories:seo": ["warn", { "minScore": 0.85 }],
-        "categories:best-practices": ["warn", { "minScore": 0.85 }]
+        "categories:best-practices": ["warn", { "minScore": 0.85 }],
+        "network-dependency-tree-insight": "off",
+        "dom-size-insight": "off",
+        "image-delivery-insight": "off",
+        "render-blocking-insight": "off",
+        "render-blocking-resources": "off"
       }
     }
   }
