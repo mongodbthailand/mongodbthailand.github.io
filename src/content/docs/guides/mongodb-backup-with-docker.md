@@ -1,6 +1,10 @@
 ---
 title: Backup ข้อมูล MongoDB โดยใช้ Docker Image ของ MongoDB
-description: การ Backup ข้อมูลใน MongoDB โดยใช้ Docker Image ของ MongoDB
+description: บทความสอนสำรองข้อมูล MongoDB ด้วย Docker image โดยไม่ต้องติดตั้ง mongo cli เพิ่มในเครื่องให้ซับซ้อน
+keywords: [mongodb-backup, docker, mongodump, restore, guide]
+meta:
+  author: MongoDB Thailand Community
+  language: th
 ---
 
 บทความนี้จะมาเขียนเกี่ยวกับวิธี Backup ข้อมูลใน MongoDB แต่เราไม่อยากติดตั้ง mongo cli ในเครื่อง แต่เราอยาก Backup ข้อมูลของ MongoDB เราจะทำยังไงดี ?
@@ -54,4 +58,3 @@ docker cp example-mongo-backup:/dump ~/Workspace/digitalocean/backup
 ![copy dump ใน container example-mongo-backup ไปไว้ที่ ~/Workspace/digitalocean เปลี่ยนชื่อเป็น backup](../../../assets/guides/mongodb-backup-with-docker/003-copy-data-from-container.webp)
 
 เพียงเท่านี้เราก็สามารถ backup ข้อมูลจาก mongoDB ได้โดยที่ไม่ต้องลง mongo cli ในเครื่องของเราแล้ว ^^
-

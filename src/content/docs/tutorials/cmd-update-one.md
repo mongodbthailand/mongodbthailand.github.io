@@ -1,6 +1,10 @@
 ---
-description: การใช้งาน db.collection.updateOne()
+description: เรียนรู้การใช้ db.collection.updateOne() เพื่อแก้ไขเอกสารหนึ่งรายการใน MongoDB collection พร้อมตัวอย่าง syntax และผลลัพธ์
 title: db.collection.updateOne()
+keywords: [updateone, mongodb, update, document, tutorial]
+meta:
+  author: MongoDB Thailand Community
+  language: th
 ---
 
 คำสั่ง `db.collection.updateOne()` เป็นคำสั่งสำหรับ แก้ไขข้อมูลเข้าไปใน `collection` เพียง 1 `document`

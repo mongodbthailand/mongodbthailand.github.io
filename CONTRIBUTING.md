@@ -6,7 +6,8 @@
 - Do NOT remove other content.
 - Styling/code can be pretty, ugly or stupid, big or small as long as it works
 - Try to keep pull requests small to minimize merge conflicts
-
+- Add meaningful image alt text for every Markdown image
+- Include metadata in article frontmatter: `title`, `description`, `keywords`, `meta.author`, `meta.language`
 
 ## Getting Started 🤩🤗:
 
@@ -35,7 +36,7 @@ git add .
 ```markdown
 git commit -m "Relevant message"
 ```
-- Then push 
+- Then push
 ```markdown
 git push origin my-new-branch
 ```
@@ -46,7 +47,7 @@ git push origin my-new-branch
 
 ## Avoid Conflicts {Syncing your fork}
 
-An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PR's may be merged while you're working on your branch/fork.   
+An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PR's may be merged while you're working on your branch/fork.
 
 ```terminal
 git remote add upstream https://github.com/mongodbthailand/mongodbthailand.github.io

@@ -1,6 +1,10 @@
 ---
-description: การใช้งาน db.collection.insertMany()
+description: เรียนรู้การใช้ db.collection.insertMany() เพื่อเพิ่มหลายเอกสารใน MongoDB collection พร้อมรูปแบบคำสั่งและผลลัพธ์ที่คืนกลับ
 title: db.collection.insertMany()
+keywords: [insertmany, mongodb, insert, collection, tutorial]
+meta:
+  author: MongoDB Thailand Community
+  language: th
 ---
 
 คำสั่ง `db.collection.insertMany()` เป็นคำสั่งสำหรับ เพิ่มข้อมูลหลาย ๆ ข้อมูล เข้าไปใน `collection`

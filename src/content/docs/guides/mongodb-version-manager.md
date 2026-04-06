@@ -1,6 +1,10 @@
 ---
 title: MongoDB Version Manager
-description: การติดตั้ง MongoDB Version Manager และการใช้งานเบื้องต้น
+description: เรียนรู้การติดตั้ง MongoDB Version Manager และการสลับเวอร์ชัน MongoDB สำหรับงานพัฒนาให้สะดวกขึ้น
+keywords: [mongodb-version-manager, mongodb, m-tool, setup, developer-tools]
+meta:
+  author: MongoDB Thailand Community
+  language: th
 ---
 
 [m - MongoDB Version Manager](https://github.com/aheckmann/m#m---mongodb-version-manager) เป็น Library ตัวนึงช่วยจัดการ Version ของ MongoDB คือสามารถเปลี่ยนเวอร์ชั่นต่าง ๆ ได้ง่ายยิ่งขึ้น (เหมาะกับการใช้สำหรับ dev เท่านั้นเน้อครับ)
@@ -103,7 +107,7 @@ m
 m 4.4.16
 ```
 
-เพื่อบอกว่าเราจะใช้งาน version นี้ 
+เพื่อบอกว่าเราจะใช้งาน version นี้
 
 > ถ้าหากยังไม่เคยติดตั้ง version นี้ จะมีข้อความบอกว่ายังไม่ได้ติดตั้ง หากต้องการดำเนินการต่อให้พิมพ์ y แล้ว enter
 

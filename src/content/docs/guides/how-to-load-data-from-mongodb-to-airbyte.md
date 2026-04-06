@@ -1,6 +1,10 @@
 ---
 title: How to load data from MongoDB to another MongoDB with Airbyte
 description: เรียนรู้วิธีใช้ Airbyte เพื่อซิงค์ข้อมูล MongoDB ของคุณไปยัง MongoDB ในเวลาไม่กี่นาที
+keywords: [airbyte, mongodb, data-sync, replication, guide]
+meta:
+    author: MongoDB Thailand Community
+    language: th
 ---
 
 ## Airbyte คืออะไร?

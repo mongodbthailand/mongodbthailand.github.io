@@ -1,6 +1,10 @@
 ---
 title: Mongoberfest 2023
 description: ร่วมอีเวนต์ Mongoberfest 2023 ในวันที่ 21 ตุลาคม 2566
+keywords: [hacktoberfest, mongoberfest, community, event, mongodb-thailand]
+meta:
+  author: MongoDB Thailand Community
+  language: th
 ---
 
 ![Mongoberfest 2023 x Pyfest](../../../assets/banners/20231007-mongoberfest-2023-event-banner.png)

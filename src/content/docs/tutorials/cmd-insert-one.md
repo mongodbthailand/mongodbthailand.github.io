@@ -1,6 +1,10 @@
 ---
-description: การใช้งาน db.collection.insertOne()
+description: เรียนรู้การใช้ db.collection.insertOne() เพื่อเพิ่มเอกสารหนึ่งรายการใน MongoDB collection พร้อมตัวอย่างและรูปแบบผลลัพธ์
 title: db.collection.insertOne()
+keywords: [insertone, mongodb, insert, document, tutorial]
+meta:
+    author: MongoDB Thailand Community
+    language: th
 ---
 
 คำสั่ง `db.collection.insertOne()` เป็นคำสั่งสำหรับ เพิ่มข้อมูลเข้าไปใน `collection` เพียง 1 `document`

@@ -1,6 +1,10 @@
 ---
-description: การใช้งาน db.collection.find()
+description: เรียนรู้วิธีใช้งาน db.collection.find() เพื่อค้นหาและดึงข้อมูลจาก MongoDB collection พร้อมตัวอย่างคำสั่งพื้นฐาน
 title: db.collection.find()
+keywords: [find, mongodb, query, collection, tutorial]
+meta:
+  author: MongoDB Thailand Community
+  language: th
 ---
 คำสั่ง `db.collection.find()` เป็นคำสั่งสำหรับ เรียกดูข้อมูลใน `collection` นั้นๆ
 อ้างอิงจาก [ลิงค์นี้](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/)

@@ -49,6 +49,9 @@ export default defineConfig({
           ],
         },
       ],
+      components: {
+        Head: './src/components/Head.astro',
+      },
       customCss: ['./src/tailwind.css'],
     }),
     tailwind({ applyBaseStyles: false }),

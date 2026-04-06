@@ -1,5 +1,7 @@
 # mongodbthailand.com Website
 
+[![Deploy to GitHub Pages](https://github.com/mongodbthailand/mongodbthailand.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/mongodbthailand/mongodbthailand.github.io/actions/workflows/deploy.yml)
+
 โปรเจกต์นี้สำหรับเก็บซอร์สโค้ดของเว็บไซต์ [MongoDB Thailand](https://mongodbthailand.com) เว็บไซต์รวบรวมข้อมูลและคำแนะนำการใช้งาน MongoDB
 สำหรับคอมมูนิตี้ชาวไทย
 
@@ -11,6 +13,8 @@
 ## สำหรับนักพัฒนาและผู้ร่วมแก้ไข
 
 เพื่อให้โปรเจกต์นี้มีรูปแบบการย่อหน้าที่ตรงกัน กรุณาลง Extension [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) ในโปรแกรมแก้ไขโค้ดของท่าน
+
+คู่มือสำหรับการพัฒนาเพิ่มเติมดูได้ที่ [DEVELOPMENT.md](./DEVELOPMENT.md)
 
 ## 🚀 Project Structure
 
