@@ -1,6 +1,10 @@
 ---
 description: ร่วม contribute ในชุมชนของเราในอีเวนต์ Hacktoberfest 2023
-title: ร่วม contribute ในชุมชนของเราในอีเวนต์ Hacktoberfest 2023
+title: ร่วม contribute ในชุมชนของเราในอีเวนต์ Hacktoberfest
+keywords: [hacktoberfest, open-source, contribute, mongodb-thailand, community]
+meta:
+  author: MongoDB Thailand Community
+  language: th
 ---
 
 กลับมาอีกครั้งกับ [Hacktoberfest](https://hacktoberfest.com/) กิจกรรมที่เปิดให้คุณได้ร่วมลงมือ Hack กับโครงการโอเพนซอร์สต่างๆ ทั่วโลก! ไม่ว่าคุณจะเป็นผู้ช่ำชอง หรือมือใหม่หัด Hack ก็สามารถมามีส่วนร่วมในเทศกาล Hack นี้ พร้อมร่วมปลูกต้นไม้ช่วยโลก และรับรางวัลต่างๆ

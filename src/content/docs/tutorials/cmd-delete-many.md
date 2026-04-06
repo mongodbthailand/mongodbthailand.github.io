@@ -1,9 +1,13 @@
 ---
-description: การใช้งาน db.collection.deleteMany()
+description: เรียนรู้การใช้ db.collection.deleteMany() เพื่อลบเอกสารหลายรายการใน MongoDB collection ตามเงื่อนไขที่กำหนด
 title: db.collection.deleteMany()
+keywords: [deletemany, mongodb, query, command, tutorial]
+meta:
+  author: MongoDB Thailand Community
+  language: th
 ---
 
-คำสั่ง `db.collection.deleteMany()` เป็นคำสั่งสำหรับ ลบข้อมูลทั้งหมด ที่เงื่อนไขที่กำหนด 
+คำสั่ง `db.collection.deleteMany()` เป็นคำสั่งสำหรับ ลบข้อมูลทั้งหมด ที่เงื่อนไขที่กำหนด
 อ้างอิงจาก [ลิงค์นี้](https://www.mongodb.com/docs/manual/reference/method/db.collection.deletemany/)
 
 ## ข้อมูลที่ Return

@@ -1,6 +1,10 @@
 ---
 title: เริ่มต้นใช้งาน NodeJS กับ MongoDB
 description: สำหรับบทความนี้ เราจะมาเรียนรู้การใช้งาน MongoDB NodeJS driver เพื่อเชื่อมต่อไปยัง MongoDB กัน
+keywords: [nodejs, mongodb, driver, connection-string, tutorial]
+meta:
+  author: MongoDB Thailand Community
+  language: th
 ---
 
 ## ก่อนที่คุณจะเริ่มใช้งาน สิ่งที่คุณต้องทำคือ
@@ -42,7 +46,7 @@ npm install mongodb
 4. เริ่มเขียนโปรแกรม Node.js เชื่อมต่อ MongoDB กัน
 
 ในตัวอย่างนี้เราจะสร้างไฟล์ index.js ขึ้นมาในโปรเจค เพื่อทำการเชื่อมต่อกับ MongoDB
-อย่าลืมเปลี่ยน connection string uri เป็นของตัวเองกันด้วยนะ 
+อย่าลืมเปลี่ยน connection string uri เป็นของตัวเองกันด้วยนะ
 
 ```jsx
 // Require MongoDB language driver
@@ -76,7 +80,7 @@ run().catch(console.dir);
 ในโปรแกรมของคุณ ควรจะมีเพียงแค่หนึ่ง `MongoClient` instance ต่อ Atlas cluster เพราะถ้ามี `MongoClient` instance มากเกินไปสำหรับเพียงแค่หนึ่ง Atlas cluster จะทำให้สิ้นเปลืองค่าใช้จ่าย และส่งผลเสียต่อประสิทธิภาพการทำงานใน database ของคุณได้ เพราะการสร้าง `MongoClient` ใช้ทรัพยากรค่อนข้างมาก และคุณสามารถใช้ `MongoClient` เดียว ในการเชื่อมต่อไปยัง database ทั้งหมดใน application ของคุณได้
 
 5. เสร็จแล้ว! มาลองรันโปรแกรม Node.js ของเรากันด้วยคำสั่ง
-    
+
 ```bash
 node index.js
 ```

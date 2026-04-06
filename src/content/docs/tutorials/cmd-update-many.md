@@ -1,6 +1,10 @@
 ---
-description: การใช้งาน db.collection.updateMany()
+description: ศึกษาวิธีใช้งาน db.collection.updateMany() เพื่อแก้ไขหลายเอกสารใน MongoDB collection ด้วยเงื่อนไขและตัวอย่างคำสั่งจริง
 title: db.collection.updateMany()
+keywords: [updatemany, mongodb, update, query, tutorial]
+meta:
+  author: MongoDB Thailand Community
+  language: th
 ---
 
 คำสั่ง `db.collection.updateMany()` เป็นคำสั่งสำหรับ แก้ไขข้อมูลเข้าไปใน `collection` เพียง 1 `document`

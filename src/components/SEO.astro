@@ -1,0 +1,31 @@
+---
+const route = Astro.locals.starlightRoute;
+const data = route.entry.data as Record<string, unknown>;
+const title = String(data.title ?? 'MongoDB Thailand');
+const description = String(data.description ?? 'MongoDB Thailand community documentation.');
+const keywords = Array.isArray(data.keywords) ? data.keywords.join(', ') : '';
+const canonical =
+  typeof data.canonical === 'string' && data.canonical.length > 0
+    ? data.canonical
+    : new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+const ogImageValue = data.ogImage as { src?: string } | undefined;
+const ogImage = ogImageValue?.src
+  ? new URL(ogImageValue.src, Astro.site ?? Astro.url).toString()
+  : new URL('/favicon.ico', Astro.site ?? Astro.url).toString();
+const meta = (data.meta ?? {}) as { author?: string; language?: string };
+---
+
+<meta name="description" content={description} />
+{keywords && <meta name="keywords" content={keywords} />}
+{meta.author && <meta name="author" content={meta.author} />}
+{meta.language && <meta name="language" content={meta.language} />}
+<link rel="canonical" href={canonical} />
+<meta property="og:type" content="article" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImage} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
